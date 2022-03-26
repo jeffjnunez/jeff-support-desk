@@ -14,7 +14,7 @@ const NewTicket = () => {
         isError,
         isSuccess,
         message
-    } = useSelector((state) => state.ticket);
+    } = useSelector((state) => state.tickets);
 
     const [name] = useState(user.name);
     const [email] = useState(user.email);
