@@ -19,7 +19,7 @@ app.use(express.urlencoded({extended: false}));
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/tickets', require('./routes/ticketRoutes'));
 
-// Serve Frontend
+//  Serve Frontend
 if (process.env.NODE_ENV === 'production') {
     // Set build folder as static
     app.use(express.static(path.join(__dirname, '../frontend/build')));
